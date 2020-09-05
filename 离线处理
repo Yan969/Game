@@ -1,0 +1,11 @@
+## 离线处理
+思路一:
+把用户的操作保存下来, 等上线后再执行
+1.保存用户操作
+记录程序集名，类名，方法名，和方法所需参数数据（可以用序列化技术保存对象）
+
+2.上线后调用反射执行
+object createdObject=Activator.CreateInstance(assemblyname,classname).Unwrap();
+MethodInfo method=createdObject.GetType().GetMethod(methodname,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic);
+method.Invoke(createdObject,new object[]{objdata});
+[转载自https://blog.csdn.net/zjj2816_163com/article/details/459733](https://blog.csdn.net/zjj2816_163com/article/details/459733)
