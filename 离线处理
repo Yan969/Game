@@ -14,3 +14,4 @@ method.Invoke(createdObject,new object[]{objdata});
 go中通过函数名调用函数
 [转载自https://www.cnblogs.com/bozhang/articles/3115290.html](https://www.cnblogs.com/bozhang/articles/3115290.html)
 [转载自https://www.jianshu.com/p/0a1eac394d95](https://www.jianshu.com/p/0a1eac394d95)
+[转载自https://www.cnblogs.com/foxy/p/9035271.html](https://www.cnblogs.com/foxy/p/9035271.html)
