@@ -9,3 +9,7 @@ object createdObject=Activator.CreateInstance(assemblyname,classname).Unwrap();
 MethodInfo method=createdObject.GetType().GetMethod(methodname,BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic);
 method.Invoke(createdObject,new object[]{objdata});
 [转载自https://blog.csdn.net/zjj2816_163com/article/details/459733](https://blog.csdn.net/zjj2816_163com/article/details/459733)
+
+
+go中通过函数名调用函数
+[转载自https://www.cnblogs.com/bozhang/articles/3115290.html](https://www.cnblogs.com/bozhang/articles/3115290.html)
